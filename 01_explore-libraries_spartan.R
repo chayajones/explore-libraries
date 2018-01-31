@@ -3,6 +3,7 @@
 #' ---
 
 library(tidyverse)
+library(devtools)
 
 #' Which libraries does R search for packages?
 
@@ -61,4 +62,6 @@ inst_pkg %>% filter(is.na(Priority))
 inst_pkg2 <- installed.packages(fields = c("LazyData", "Title", "Author")) %>% as_tibble()
 
 inst_pkg2 %>% count(str_detect(Author, 'Hadley')) %>% mutate(prop = n / sum(n))
+
+devtools::session_info()
 
