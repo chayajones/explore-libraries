@@ -7,4 +7,6 @@ This is a line I added from GitHub.
 
 This is a link to my [markdown](01_explore-libraries_spartan.md) file
 
-This is a line I added from RStudio
+
+This is a line I added from RStudio combined with a line from the browser
+
